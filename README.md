@@ -12,7 +12,7 @@
 2. 添加 html 属性：
 
   ```html
-  <img src="" data=xssimg="图片的链接" />
+  <img src="" data-xssimg="图片的链接" />
   ```
 
 
