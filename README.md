@@ -24,3 +24,5 @@
 ## 原理：
 
 images 如果 `Content-Type` 不对的话，并不会触发 load 事件。
+
+详细说明：[通过 img URL 实施 XSS 的解决方案](http://sofish.de/2138)
