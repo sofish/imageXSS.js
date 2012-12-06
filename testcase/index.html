@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>imagexss.js</title>
+</head>
+<body>
+
+<h3>1. 正常的图片</h3>
+<img src="" data-xssimg="https://www.google.com/images/srpr/logo3w.png" alt="正常的图片" />
+
+<h3>2. xss 的图片（理论上是显示不出来的）</h3>
+<img src="" data-xssimg="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js" alt="（如果成功这个 alt 会变成 data-xssimg 的值）" />
+
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../imagexss.js"></script>
+</body>
+</html>
